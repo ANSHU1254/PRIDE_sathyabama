@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Potel</title>
+</head>
+<body>
+    <h1>Employee Registration</h1>
+    <form action="\action.php">
+      <label for="first name">first Name</label><br>
+  <input type="text" id="first name"name="first name"><br>
+  <label for="last name">last Name</label><br>
+  <input type="text" id="last name"name="name"></form>
+  <label for="Email">Email</label><br>
+  <input type="email" id="email">
+  </form>
+  <br>
+    <label>
+      <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+</label>
+</form>
+<label for="phone">Phone Number:</label>
+<input type="tel" id="phone" name="phone" required><br><br>
+
+<label for="address">Address:</label><br>
+<textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+</fieldset>
+  <label for="designation">Designation:</label>
+  <input type="text" id="designation" name="designation" required><br><br>
+
+  <label for="department">Department:</label>
+  <input type="text" id="department" name="department" required><br><br>
+
+  <label for="salary">Salary:</label>
+  <input type="number" id="salary" name="salary" required><br><br>
+
+  <label for="join_date">Joining Date:</label>
+  <input type="date" id="join_date" name="join_date" required><br><br>
+
+<input type="submit" value="Register">
+</body>
+</html>
