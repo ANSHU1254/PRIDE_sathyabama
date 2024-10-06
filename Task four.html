@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Ecommerce Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+    <!-- Custom CSS for size adjustments -->
+    <style>
+        /* Adjust Navbar */
+        .navbar {
+            padding: 0.5rem 1rem;
+        }
+        .navbar-brand, .nav-link {
+            font-size: 0.9rem;
+        }
+
+        /* Adjust Search Bar and User Controls */
+        .form-control {
+            height: 40px;
+        }
+        .btn-outline-secondary {
+            padding: 0.5rem 0.75rem;
+        }
+
+        /* Adjust Banner Image */
+        .container img {
+            max-width: 100%;
+            height: auto;
+            max-height: 400px; /* Limit banner height */
+        }
+
+        /* Product Section Adjustments */
+        .product img {
+            width: 100%;
+            height: auto;
+            max-height: 200px; /* Control product image size */
+            object-fit: contain;
+        }
+        .product h3 {
+            font-size: 1rem; /* Adjust product title size */
+        }
+        .price {
+            font-size: 1.2rem;
+        }
+
+        /* Features Section */
+        .card {
+            padding: 2rem;
+            height: 100%; /* Ensure cards have equal height */
+        }
+
+        /* Ensure products display well in grid */
+        .row > .col-md-3 {
+            margin-bottom: 1rem; /* Space between product cards */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .navbar-brand, .nav-link {
+                font-size: 0.8rem;
+            }
+            .product img {
+                max-height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Ecommerce</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Delivery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Payment</a></li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <span class="navbar-text text-white">Call: +9912345678</span>
+                </li>
+                <li class="nav-item">
+                    <select class="form-control">
+                        <option>English</option>
+                        <option>Hindi</option>
+                        <option>Tamil</option>
+                        <option>Telugu</option>
+                        <option>Korean</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Search and User Controls -->
+    <div class="container-fluid bg-light py-2">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="30" alt="Bootstrap Logo">
+                <h4 class="d-inline-block ml-2">Ecommerce Bootstrap</h4>
+            </div>
+            <div class="col-md-4 text-center">
+                <input type="search" class="form-control" placeholder="Search">
+            </div>
+            <div class="col-md-4 text-center">
+                <button class="btn btn-outline-secondary"><i class="fas fa-cart-shopping"></i></button>
+                <button class="btn btn-outline-secondary"><i class="fas fa-user"></i></button>
+                <span class="ml-2">Welcome!</span>
+                <button class="btn btn-link">Sign in</button>
+                <button class="btn btn-link">Register</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Category Navigation -->
+    <div class="container my-3">
+        <nav class="nav nav-pills justify-content-center">
+            <a class="nav-link active" href="#">All Categories</a>
+            <a class="nav-link" href="#">Fashion</a>
+            <a class="nav-link" href="#">Supermarket</a>
+            <a class="nav-link" href="#">Electronics</a>
+            <a class="nav-link" href="#">Baby & Toys</a>
+            <a class="nav-link" href="#">Fitness & Sport</a>
+            <a class="nav-link" href="#">Clothing</a>
+            <a class="nav-link" href="#">Furniture</a>
+        </nav>
+    </div>
+
+    <!-- Banner Image -->
+    <div class="container">
+        <img src="https://img.freepik.com/free-vector/abstract-blue-wave-banner-white-background_1035-23133.jpg" class="img-fluid" alt="Banner">
+    </div>
+
+    <!-- Features Section -->
+    <section class="container text-center my-5">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card p-4">
+                    <i class="fas fa-truck fa-3x"></i>
+                    <h3 class="my-3">Fast Delivery</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card p-4">
+                    <i class="fas fa-user-friends fa-3x"></i>
+                    <h3 class="my-3">User Friendly</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card p-4">
+                    <i class="fas fa-lock fa-3x"></i>
+                    <h3 class="my-3">Secure Payments</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Products -->
+    <section class="container">
+        <h1 class="text-center my-5">Popular Products</h1>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product">
+                    <img src="https://images.jdmagicbox.com/rep/b2b/full-sleeve-t-shirt/full-sleeve-t-shirt-1.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>★★★★★ 34 reviews</p>
+                    <p class="price">$179.00</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4c6u7OsZKfixKme8gH9X8JRH5ufd9W_f82w&s" alt="Product 2">
+                <h3>Some item name here</h3>
+                <p>★★★★★ 34 reviws</p>
+                <p class="price">$280.00</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+              <div class="product">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/9/341549330/FO/FH/KW/6861393/26aug23-1080x1080px-8-500x500.jpg" alt="Product 3">
+                <h3>Great product name here</h3>
+                <p>★★★★★ 34 reviws</p>
+                <p class="price">$56.00</p>
+              </div>
+            </div>
+              <div class="col-md-3 col-sm-6 mb-4">
+              <div class="product">
+                <img src="https://m.media-amazon.com/images/I/81lFbxba4sL.jpg" alt="Product 4">
+                <h3>Just another product name</h3>
+                <p>★★★★★ 34 reviws</p>
+                <p class="price">$179.00</p>
+              </div>
+            </div>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </section>
+
+    <!-- New Arrivals -->
+    <section class="container">
+        <h1 class="text-center my-5">New Arrivals</h1>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2023/5/310352054/AB/SJ/UK/37836981/customized-men-wallet-250x250.jpg" alt="Product 5">
+    <h3>Product 5</h3>
+    <p>★★★★★ 34 reviws</p>
+    <p class="price">$179.00</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2023/7/329526951/IE/VU/SV/27478638/living-room-1-seater-sofa-250x250.jpg" alt="Product 6">
+    <h3>Product 6</h3>
+    <p>★★★★★ 34 reviws</p>
+    <p class="price">$280.00</p>
+                  </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product">
+                    <img src="https://i5.walmartimages.com/seo/Pre-Owned-Apple-Watch-Series-6-44MM-Silver-Aluminum-Case-White-Sport-Band_056dc4cf-5a0b-494e-8566-6037bf03ab0d.0e6587ce71d70479f933b2572d7bee43.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="Product 7">
+    <h3>Product 7</h3>
+    <p>★★★★★ 34 reviws</p>
+    <p class="price">$56.00</p>
+                  </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product">
+                    <img src="https://procare.gr/10661-large_default/apple-airpods-max-green.jpg" alt="Product 8">
+    <h3>Product 8</h3>
+    <p>★★★★★ 34 reviws</p>
+    <p class="price">$179.00</p>
+                  </div>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
